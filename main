@@ -1,0 +1,22 @@
+repeat
+    task.wait()
+until game.GameId ~= nil
+repeat
+    task.wait()
+until game:IsLoaded()
+
+if getgenv().loaded then
+    return
+end
+getgenv().loaded = true
+
+universeid = game.GameId
+
+setclipboard("discord.gg/darkscripts")
+
+if universeid == 8737899170 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DARKSIDESCRIPTS/PS99/refs/heads/main/ps99",true))()
+end
+if universeid == 142823291 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DARKSIDESCRIPTS/MM2/refs/heads/main/MM2",true))()
+end
